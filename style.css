@@ -81,13 +81,58 @@ header{
   color: var(--text-color-secondary);
 }
 
+
+/* .search .btnFav {
+  width: 17rem;
+  height: 4.8rem;
+  border: none;
+  background-color: hsla(195, 91%, 25%, 1);
+  border-radius: 0.5rem;
+
+  color: white;
+  font-family: var(--ff-primary);
+  font-size: 1.4rem;
+  line-height: 146%;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: background-color 400ms;
+}
+
+button{
+  background-color: hsla(195, 91%, 25%, 1);
+  border: none;
+  color: white;
+}
+
+
+.btnFav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search .btnFav:hover {
+  background-color: white;
+  color: hsla(195, 91%, 25%, 1);
+}
+
+.search .btnFav:hover svg path {
+  fill: hsla(195, 91%, 25%, 1);
+} */
+
 .search button{
   background-color: var(--primary-color);
   border-radius: 0 .4rem .4rem 0;
+  font-weight: 700;
   height: 3.2rem;
   border: none;
   padding: 1.2rem 3.2rem;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 
   color: white;
 
@@ -99,26 +144,48 @@ header{
   cursor: pointer;
 }
 
+/* svg path{
+  fill: red
+}
+
+svg path:hover{
+  fill: yellow
+} */
+
+/* .search button:hover{
+  background-color: #ffffff;
+  color:  #065E7C;
+  filter: brightness(1.1);
+  fill: green;
+} */
+
 .search button:hover{
   background-color: #ffffff;
   color:  #065E7C;
   filter: brightness(1.1);
 }
 
-.color-svg{
-  fill:#ffffff
+.search button:hover svg path{
+  fill: #065E7C;
 }
 
-.color-svg:hover{
+
+
+
+/* .color-svg{
+  fill:#ffffff
+} */
+
+/* .color-svg:hover{
   fill:red
-}
+} */
 
 table{
   width: 100%;
   border-collapse: collapse;
-  margin-top: 8.7rem;
-  border: 1px solid #4A808C;
-  border-radius: 12px;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  outline: 0.1rem solid hsla(195, 91%, 25%, 1);
 
 }
 
@@ -200,4 +267,18 @@ td .remove{
 
   color: #F75A68;;
   cursor: pointer;
+}
+
+table .emptyFav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+
+  gap: 6rem;
+  height: 300px;
 }

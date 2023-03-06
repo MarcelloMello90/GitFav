@@ -68,15 +68,19 @@ export class FavoritesView extends Favorites{
   onadd() {
     const addButton = this.root.querySelector('.search button')
     addButton.onclick = () => {
-      const { value } = this.root.querySelector('.search input')
+      let inputEntries  = this.root.querySelector('.search input')
     
-      this.add(value)
+      this.add(inputEntries.value)
+
+      
+      inputEntries.value = ""
     }
   }
 
   //preenchimento do conteudo
   update(){
     this.removeAllTr()
+    this.isEmpty()
    
    
     this.entries.forEach ( user => {
@@ -100,6 +104,23 @@ export class FavoritesView extends Favorites{
       this.tbody.append(row)
     })
  
+  }
+
+  isEmpty() {
+    if (this.entries.length == 0) {
+      const tr = document.createElement('tr')
+
+      tr.innerHTML = `
+      <td colspan="4">
+        <div class="emptyFav">
+          <img src="./assets/estrela.svg" />
+          Nenhum favorito ainda
+        </div>
+      </td>
+      `
+
+      this.tbody.append(tr)
+    }
   }
 
   //criaçao dos elemntos
