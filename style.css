@@ -18,8 +18,6 @@
 
   --color-svg: #ffffff;
   --color-svg-hover:hsla(195, 91%, 25%, 1);
-
-  ;
 }
 
 body{
@@ -81,48 +79,6 @@ header{
   color: var(--text-color-secondary);
 }
 
-
-/* .search .btnFav {
-  width: 17rem;
-  height: 4.8rem;
-  border: none;
-  background-color: hsla(195, 91%, 25%, 1);
-  border-radius: 0.5rem;
-
-  color: white;
-  font-family: var(--ff-primary);
-  font-size: 1.4rem;
-  line-height: 146%;
-  text-transform: uppercase;
-  font-weight: 700;
-
-  cursor: pointer;
-  transition: background-color 400ms;
-}
-
-button{
-  background-color: hsla(195, 91%, 25%, 1);
-  border: none;
-  color: white;
-}
-
-
-.btnFav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.search .btnFav:hover {
-  background-color: white;
-  color: hsla(195, 91%, 25%, 1);
-}
-
-.search .btnFav:hover svg path {
-  fill: hsla(195, 91%, 25%, 1);
-} */
-
 .search button{
   background-color: var(--primary-color);
   border-radius: 0 .4rem .4rem 0;
@@ -140,24 +96,8 @@ button{
   align-items: center;
   gap: 8px;
   
-
   cursor: pointer;
 }
-
-/* svg path{
-  fill: red
-}
-
-svg path:hover{
-  fill: yellow
-} */
-
-/* .search button:hover{
-  background-color: #ffffff;
-  color:  #065E7C;
-  filter: brightness(1.1);
-  fill: green;
-} */
 
 .search button:hover{
   background-color: #ffffff;
@@ -169,31 +109,18 @@ svg path:hover{
   fill: #065E7C;
 }
 
-
-
-
-/* .color-svg{
-  fill:#ffffff
-} */
-
-/* .color-svg:hover{
-  fill:red
-} */
-
 table{
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 1.2rem;
   outline: 0.1rem solid hsla(195, 91%, 25%, 1);
-
 }
 
 table *{
   font-size: 1.4rem;
   color: var(--text-color);
   font-family: var(--ff-primary);
-
 }
 
 table th{
@@ -205,7 +132,6 @@ table th{
 
   text-align: left;
   padding: 1.5rem;
-  
 }
 
 table th:first-child{
@@ -223,12 +149,10 @@ table tr:nth-child(even){
 
 table tr:nth-child(odd){
   background: rgba(6, 22, 27, 0.5);
-
 }
 
 table tr:hover{
   border: 1px solid #4A808C;
-
 }
 
 table td{
